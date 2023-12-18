@@ -22,3 +22,6 @@
   background-color: var(--primary-color);
   color: white;
 }
+#form button:last-child {
+  background-color: var(--primary-color);
+}
