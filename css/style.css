@@ -1,7 +1,7 @@
-/* img {
+img {
   max-width: 100%;
 }
- */
+
 /* PALETTE */
 
 :root {
@@ -28,4 +28,20 @@
 }
 #form button:last-child {
   background-color: var(--primary-color);
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+#jumbo .line,
+#about-us .line {
+  background-color: white;
+}
+
+#portfolio .line,
+#form .line {
+  background-color: black;
 }
