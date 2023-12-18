@@ -1,0 +1,16 @@
+/* img {
+  max-width: 100%;
+}
+ */
+/* PALETTE */
+
+:root {
+  --primary-color: #1abc9c;
+  --secondary-color: #2c3e50;
+  --tertiary-color: #3a546d;
+}
+
+#header,
+#footer {
+  background-color: var(--secondary-color);
+}
