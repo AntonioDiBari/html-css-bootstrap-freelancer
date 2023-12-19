@@ -27,18 +27,22 @@
         class="container-md d-flex justify-content-between align-items-center h-100"
       >
         <h2>START BOOTSTRAP</h2>
-        <ul class="m-0 fw-semibold">
+        <ul class="m-0 fw-semibold d-none d-md-block">
           <li class="d-inline me-3">PORTFOLIO</li>
           <li class="d-inline me-3">ABOUT</li>
           <li class="d-inline me-3">CONTACT</li>
         </ul>
+        <span
+          class="d-md-none border fs-3 ps-2 pe-2 text-secondary border-secondary rounded"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
       </nav>
     </header>
     <section id="jumbo" class="pt-5 pb-5">
-      <div class="container-sm w-50 text-center">
-        <img src="./img/avatar.svg" alt="" class="w-50" />
+      <div class="container-sm text-center">
+        <img src="./img/avatar.svg" alt="" class="jumbo-img" />
         <h1 class="fw-bold">START BOOTSTRAP</h1>
-        <div class="d-flex justify-content-center align-items-center gx-5">
+        <div class="d-flex justify-content-center align-items-center py-3">
           <div class="line"></div>
           <div class="ms-4 me-4 fs-3"><i class="fa-solid fa-star"></i></div>
           <div class="line"></div>
@@ -46,7 +50,7 @@
         <nav
           style="--bs-breadcrumb-divider: '-'"
           aria-label="breadcrumb"
-          class="d-flex justify-content-center"
+          class="d-flex justify-content-center flex-nowrap"
         >
           <ul class="breadcrumb m-0 fw-semibold">
             <li class="breadcrumb-item">GRAPHIC ARTIST</li>
@@ -59,7 +63,7 @@
     <section id="portfolio" class="pt-5 pb-5">
       <div class="container-md">
         <h2 class="fw-bold text-center">PORTFOLIO</h2>
-        <div class="d-flex justify-content-center align-items-center gx-5">
+        <div class="d-flex justify-content-center align-items-center py-3">
           <div class="line"></div>
           <div class="ms-4 me-4 fs-3"><i class="fa-solid fa-star"></i></div>
           <div class="line"></div>
@@ -89,14 +93,23 @@
     <section id="about-us" class="pt-5 pb-5">
       <div class="container-md text-center">
         <h2 class="fw-bold">ABOUT</h2>
-        <div class="d-flex justify-content-center align-items-center gx-5">
+        <div class="d-flex justify-content-center align-items-center py-3">
           <div class="line"></div>
           <div class="ms-4 me-4 fs-3"><i class="fa-solid fa-star"></i></div>
           <div class="line"></div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-10 col-lg-5">Column</div>
-          <div class="col-sm-10 col-lg-5">Column</div>
+        <div class="row justify-content-center gx-5 pb-4 fs-4 text-start">
+          <div class="col-sm-10 col-lg-5">
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The
+            download includes the complete source files including HTML, CSS and
+            JavaScript as well as optional LESS stylesheets for easy
+            customization.
+          </div>
+          <div class="col-sm-10 col-lg-5">
+            Whether you're a student looking to showcase your work, a
+            professional looking to attract clients, or a graphic artist looking
+            to share your projects, this template is the perfect starting point!
+          </div>
         </div>
         <button type="button" class="btn border text-light">
           <i class="fa-solid fa-download"></i> Download
@@ -111,46 +124,84 @@
           <div class="ms-4 me-4 fs-3"><i class="fa-solid fa-star"></i></div>
           <div class="line"></div>
         </div>
-        <button
-          type="button"
-          class="btn border-bottom text-start d-block w-100 ps-0"
+        <!-- FORM -->
+        <form
+          action="https://learning.tizianonicolai.com/request-catcher/"
+          method="get"
         >
-          Name
-        </button>
-        <button
-          type="button"
-          class="btn border-bottom text-start d-block w-100 ps-0"
-        >
-          Email Address
-        </button>
-        <button
-          type="button"
-          class="btn border-bottom text-start d-block w-100 ps-0"
-        >
-          Phone Number
-        </button>
-        <textarea class="border-0 border-bottom text-start d-block w-100 pb-5">
-Message</textarea
-        >
-        <button type="button" class="btn border-0 text-light mt-5">Send</button>
+          <input
+            type="text"
+            class="border-0 border-bottom w-100 pb-2"
+            name="name"
+            id="name"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            class="border-0 border-bottom w-100 pb-2"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <input
+            type="text"
+            class="border-0 border-bottom w-100 pb-2"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+          />
+          <textarea
+            class="border-0 border-bottom text-start d-block w-100"
+            rows="5"
+            placeholder="Message"
+            name="text-area"
+            id="text-area"
+          ></textarea>
+          <button type="submit" class="btn border-0 text-light mt-5">
+            Send
+          </button>
+        </form>
       </div>
     </section>
-    <section id="info" class="pt-5 pb-5">
+    <section id="info" class="py-5">
       <div class="container-md">
-        <div class="row text-center justify-content-center gx-5">
+        <div class="row text-center justify-content-evenly">
           <div class="col-sm-10 col-lg-3 mb-sm-5 mb-lg-0">
             <h3>LOCATION</h3>
             <span>2215 John Daniel Drive Clark, MO 54243</span>
           </div>
           <div class="col-sm-10 col-lg-3 mb-sm-5 mb-lg-0">
             <h3>AROUND THE WEB</h3>
-            <span>2215 John Daniel Drive Clark, MO 54243</span>
+            <div class="social d-flex justify-content-evenly fs-5">
+              <div class="social-logo rounded-circle border">
+                <div class="wrapper-logo">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+              </div>
+              <div class="social-logo rounded-circle border">
+                <div class="wrapper-logo">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+              </div>
+              <div class="social-logo rounded-circle border">
+                <div class="wrapper-logo">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+              <div class="social-logo rounded-circle border">
+                <div class="wrapper-logo">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-10 col-lg-4 mb-sm-5 mb-lg-0">
+          <div class="col-sm-10 col-lg-3 mb-sm-5 mb-lg-0">
             <h3>ABOUT THE FREELANCER</h3>
             <span
               >Freelance is a free to use, open source Bootstrap theme created
-              by <a href="#">Start Bootstrap</a>.</span
+              by
+              <a href="#" class="text-decoration-none">Start Bootstrap</a
+              >.</span
             >
           </div>
         </div>

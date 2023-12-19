@@ -16,7 +16,10 @@ img {
   color: white;
   height: 100px;
 }
-
+.jumbo-img {
+  height: 250px;
+  aspect-ratio: 1;
+}
 #jumbo,
 #about-us {
   background-color: var(--primary-color);
@@ -44,4 +47,12 @@ img {
 #portfolio .line,
 #form .line {
   background-color: black;
+}
+#info a {
+  color: var(--primary-color);
+}
+.wrapper-logo {
+  height: 50px;
+  aspect-ratio: 1;
+  line-height: 50px;
 }
