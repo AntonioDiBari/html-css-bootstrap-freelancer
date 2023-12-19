@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- link css bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,14 +24,21 @@
   </head>
   <body>
     <header id="header">
+      <!-- HEADER CON NAV LIGO E LINK-->
       <nav
         class="container-md d-flex justify-content-between align-items-center h-100"
       >
         <h2>START BOOTSTRAP</h2>
         <ul class="m-0 fw-semibold d-none d-md-block">
-          <li class="d-inline me-3">PORTFOLIO</li>
-          <li class="d-inline me-3">ABOUT</li>
-          <li class="d-inline me-3">CONTACT</li>
+          <li class="d-inline me-3">
+            <a href="" class="text-light text-decoration-none">PORTFOLIO</a>
+          </li>
+          <li class="d-inline me-3">
+            <a href="" class="text-light text-decoration-none">ABOUT</a>
+          </li>
+          <li class="d-inline me-3">
+            <a href="" class="text-light text-decoration-none">CONTACT</a>
+          </li>
         </ul>
         <span
           class="d-md-none border fs-3 ps-2 pe-2 text-secondary border-secondary rounded"
@@ -39,6 +47,7 @@
       </nav>
     </header>
     <section id="jumbo" class="pt-5 pb-5">
+      <!-- JUMBO SECTION -->
       <div class="container-sm text-center">
         <img src="./img/avatar.svg" alt="" class="jumbo-img" />
         <h1 class="fw-bold">START BOOTSTRAP</h1>
@@ -47,6 +56,7 @@
           <div class="ms-4 me-4 fs-3"><i class="fa-solid fa-star"></i></div>
           <div class="line"></div>
         </div>
+        <!-- NAV BREADCRUMB CON BOOTSTRAP -->
         <nav
           style="--bs-breadcrumb-divider: '-'"
           aria-label="breadcrumb"
@@ -60,6 +70,7 @@
         </nav>
       </div>
     </section>
+    <!-- SEZIONE PORTFOLIO CON GRID ADATTABILE -->
     <section id="portfolio" class="pt-5 pb-5">
       <div class="container-md">
         <h2 class="fw-bold text-center">PORTFOLIO</h2>
@@ -90,6 +101,7 @@
         </div>
       </div>
     </section>
+    <!-- SEZIONE ABOUT US CON GRID A 2 COL -->
     <section id="about-us" class="pt-5 pb-5">
       <div class="container-md text-center">
         <h2 class="fw-bold">ABOUT</h2>
@@ -98,7 +110,9 @@
           <div class="ms-4 me-4 fs-3"><i class="fa-solid fa-star"></i></div>
           <div class="line"></div>
         </div>
-        <div class="row justify-content-center gx-5 pb-4 fs-4 text-start">
+        <div
+          class="row justify-content-center gx-5 gy-sm-5 pb-4 fs-4 text-start"
+        >
           <div class="col-sm-10 col-lg-5">
             Freelancer is a free bootstrap theme created by Start Bootstrap. The
             download includes the complete source files including HTML, CSS and
@@ -163,39 +177,40 @@
         </form>
       </div>
     </section>
+    <!-- SEZIONE INFO UTILI + SOCIAL -->
     <section id="info" class="py-5">
       <div class="container-md">
-        <div class="row text-center justify-content-evenly">
-          <div class="col-sm-10 col-lg-3 mb-sm-5 mb-lg-0">
+        <div class="row text-center justify-content-evenly g-5">
+          <div class="col-sm-10 col-lg-3">
             <h3>LOCATION</h3>
             <span>2215 John Daniel Drive Clark, MO 54243</span>
           </div>
-          <div class="col-sm-10 col-lg-3 mb-sm-5 mb-lg-0">
+          <div class="col-sm-10 col-lg-3">
             <h3>AROUND THE WEB</h3>
-            <div class="social d-flex justify-content-evenly fs-5">
-              <div class="social-logo rounded-circle border">
+            <div class="social d-flex justify-content-center fs-5">
+              <div class="social-logo rounded-circle border m-2">
                 <div class="wrapper-logo">
                   <i class="fa-brands fa-facebook-f"></i>
                 </div>
               </div>
-              <div class="social-logo rounded-circle border">
+              <div class="social-logo rounded-circle border m-2">
                 <div class="wrapper-logo">
                   <i class="fa-brands fa-google-plus-g"></i>
                 </div>
               </div>
-              <div class="social-logo rounded-circle border">
+              <div class="social-logo rounded-circle border m-2">
                 <div class="wrapper-logo">
                   <i class="fa-brands fa-twitter"></i>
                 </div>
               </div>
-              <div class="social-logo rounded-circle border">
+              <div class="social-logo rounded-circle border m-2">
                 <div class="wrapper-logo">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-10 col-lg-3 mb-sm-5 mb-lg-0">
+          <div class="col-sm-10 col-lg-3">
             <h3>ABOUT THE FREELANCER</h3>
             <span
               >Freelance is a free to use, open source Bootstrap theme created
@@ -207,6 +222,7 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
     <footer
       id="footer"
       class="d-flex justify-content-center align-items-center"

@@ -20,6 +20,9 @@ img {
   height: 250px;
   aspect-ratio: 1;
 }
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+}
 #jumbo,
 #about-us {
   background-color: var(--primary-color);
